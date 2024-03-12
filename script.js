@@ -28,29 +28,29 @@ const restaurant = {
   },
 };
 
-// const {name, openingHours, categories} = restaurant
+const {name, openingHours, categories} = restaurant
 
-// // console.log(name, openingHours, categories);
+// console.log(name, openingHours, categories);
 
-// //nested objects
+//nested objects
 
-// const {fri : {open, close }} = openingHours;
-// console.log(open, close);
+const {fri : {open, close }} = openingHours;
+console.log(open, close);
 
-// const arr = [3,4,5]
+const arr = [3,4,5]
 
-// const newarr = [1, 2, ...arr]
-// console.log(newarr);
-
-
-// const joinedArrays = [...restaurant.categories, ...restaurant.mainMenu]
-
-// console.log(joinedArrays);
+const newarr = [1, 2, ...arr]
+console.log(newarr);
 
 
-// restaurant.numguest = 0;
-// const guest = restaurant.numguest ?? 10;
-// console.log(guest);
+const joinedArrays = [...restaurant.categories, ...restaurant.mainMenu]
+
+console.log(joinedArrays);
+
+
+restaurant.numguest = 0;
+const guest = restaurant.numguest ?? 10;
+console.log(guest);
 
 
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]
