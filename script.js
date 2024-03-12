@@ -58,3 +58,18 @@ console.log(menu);
 
 for (const item of menu.entries()) console.log(item);
 for (const [number, text] of menu.entries()) console.log(`${number}: ${text}`);
+
+
+const toukir = new Set(['toukir','toukir','toukir','toukir','toukir','toukir',])
+
+console.log(toukir);
+
+
+const rest = new Map();
+rest.set('name', "classico")
+rest.set(1, "Italy")
+rest.set(2, "Portugal")
+
+
+
+console.log(rest);
