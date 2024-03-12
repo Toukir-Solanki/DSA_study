@@ -28,8 +28,21 @@ const restaurant = {
   },
 };
 
-let arc = ['titts', 'pussy', 'butts']
+const {name, openingHours, categories} = restaurant
 
-const [x,y,z] = arc
+// console.log(name, openingHours, categories);
 
-console.log(x,y,z);
+//nested objects
+
+const {fri : {open, close }} = openingHours;
+console.log(open, close);
+
+const arr = [3,4,5]
+
+const newarr = [1, 2, ...arr]
+console.log(newarr);
+
+
+const joinedArrays = [...restaurant.categories, ...restaurant.mainMenu]
+
+console.log(joinedArrays);
