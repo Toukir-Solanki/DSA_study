@@ -74,5 +74,30 @@
 
 // console.log(rest);
 
+const bookings = []
 
 
+const createBooking = function(flightNum, munPassengers = 1, price = 199){
+  // munPassengers ||= 1;
+  // price ||= 199
+  const booking = {
+    flightNum,
+    munPassengers,
+    price
+  }
+
+console.log(booking);
+bookings.push(booking)
+
+}
+
+createBooking('LH123', 72, 139)
+
+
+const oneWord = function(str){
+  return str.replace(/ /g, "").toLowerCase();
+}
+
+const uppwefWord = function(str){
+  const [first, ...other] = str.split(''); 
+}
